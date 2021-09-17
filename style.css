@@ -1,0 +1,203 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(#7a18ec,#7a14ec 60%,#fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.btn1
+{   display: flex;
+    padding: 13px 50px;
+    border: none;
+    font-size: 16px;
+    border:none;
+    margin:20px;
+    text-transform: uppercase;
+    color: #7a18ec;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    background: radial-gradient(circle at bottom right ,#fd00da,#19d7f8);
+    transition: all 0.5s;
+    position: relative;
+
+}
+
+
+  .btn1:after {
+    content: "BUTTON 1";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+    background:radial-gradient(circle
+    at top left,#fd00da,#19d7f8) ;
+    border-radius: 20px;
+   
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 2px;
+    transition: all 1s;
+   
+    position: absolute;
+    transform: scale(1) rotateX(0);
+    opacity: 1;
+  }
+  .btn1:hover:after {
+    transform: scale(0) rotateX(360deg);
+    left:0 ;
+    opacity: 0;
+  }
+
+  /* Let's start the button 2 */
+  .btn2
+{
+padding: 13px 50px;
+font-size: 16px;
+border: 0;
+color:black;
+
+position: relative;
+border-radius: 20px;
+margin: 20px;
+margin-bottom: 20px;
+letter-spacing: 2px;
+text-transform: uppercase;
+background:radial-gradient(circle
+at bottom right,#7a18ec,#19d7f8) ;
+transition: all 0.5s;
+overflow: hidden;
+}
+.btn2:hover
+{
+  background: #03e9f4;
+    color: #fff;
+    margin: 20px;
+    border-bottom: 20px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+     
+}
+
+
+
+.btn2 span{   
+position: absolute;
+display: block;
+}
+.btn2 span:nth-child(1){
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: linear-gradient(90deg,transparent,#fd00da);
+animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+0%{
+    left: -100%;
+}
+50%,100%{
+    left: 100%;
+}
+}
+.btn2 span:nth-child(2){
+    top: 100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#fd00da);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+    }
+    @keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+    }
+
+.btn2 span:nth-child(3){
+  bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#fd00da);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+    }
+    @keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+    }
+    .btn2 span:nth-child(4){
+        bottom: 100%;
+         left: 0;
+          width: 3px;
+          height: 100%;
+          background: linear-gradient(360deg,transparent,#fd00da);
+          animation: animate4 1s linear infinite;
+          animation-delay: 0.75s;
+          }
+          @keyframes animate4{
+          0%{
+             bottom: -100%;
+          }
+          50%,100%{
+              bottom: 100%;
+          }
+          }
+
+          /* Let's start the button 3 */
+          .btn3
+          {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 13px 45px;
+              letter-spacing: 3px;
+              font-size: 16px;
+              margin: 20px;
+              margin-top: 30px;
+              background-color: transparent;
+              border: 2px solid crimson;
+              border-radius: 20px;
+              color: white ;
+              text-transform: uppercase;
+              transition: .5s ease;
+              
+            
+          
+          }
+         .btn3:hover
+         {
+            background:radial-gradient(circle
+            at top left,#fd00da,#19d7f8);
+            border: none;
+            color: #fff;
+            border-bottom: 20px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 200px #03e9f4
+
+
+         }
